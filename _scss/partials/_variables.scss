@@ -10,14 +10,20 @@ $header-height: 60px;
 
 //FONTS
 $sans-serif: 'Rodio', 'Helvetica Neue', helvertica, arial, sans-serif;
-$base-paragraph-color: #2a3333;
+$base-paragraph-color: #2a3333; //try #53454A
 
-//colors
-$primary: #0072ff; //blue
-$secondary: #00c6ff; //lighter blue
-$special: #FD8B10;
-$green: #3dba0f; //green
-$support-color: $green;
+//color variables
+$orange: #EDB05C; //pastel orange
+$pastel-green: #89BBAC;
+$green: #3dba0f; //lime green
+$red: #E9704E; //pastel red
+$blue: #0072ff; //bright blue
+
+//template colors
+$primary: darken($pastel-green,10); //green
+$secondary: lighten($pastel-green,10); //lighter green
+$special: $red;
+$support-color: $orange;
 
 //forms & buttons
 $fb-height: 40px;
