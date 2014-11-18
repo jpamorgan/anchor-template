@@ -1,0 +1,68 @@
+.btn, input[type="submit"], button {
+	display: inline-block;
+	margin-bottom: 5px;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+	color: white;
+	@include border-top-radius(2px);
+    @include border-bottom-radius(2px);
+    outline: none;
+
+	background-color: $primary;
+	border: 1px solid rgba(0, 0, 0, 0);
+	line-height: $fb-line-height;
+    padding: $fb-padding;
+    font-size: $fb-font-size;
+    height: $fb-height;
+    font-weight: normal;
+    font-family: $sans-serif;
+    cursor: pointer;
+
+    i {
+    	margin-right: 4px;
+    }
+    &.btn-lg {
+    }
+
+    &:hover {
+    	color: white;
+		border: 1px solid rgba(0, 0, 0, .15);
+    }
+    &:active {
+    	background-color: darken($primary,4);
+    }
+
+    &.btn-block {
+    	display: block;
+    }
+
+    &.btn-special {
+        background-color: $special;
+        &:active {
+            background-color: darken($special,4);
+        }
+    }
+
+    &.btn-muted {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .25);
+        color: #404040;
+        &:hover {
+            border: 1px solid rgba(0, 0, 0, .35);
+        }
+        &:active {
+            background-color: rgba(0, 0, 0, .1);
+        }
+    }
+
+    &.btn-disabled {
+		background-color: rgba(0, 0, 0, .1);
+		border: 1px solid rgba(0, 0, 0, .1);
+		color: #999;
+		cursor: default;
+		pointer-events: none;
+    }
+}

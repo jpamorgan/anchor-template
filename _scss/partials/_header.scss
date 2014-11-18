@@ -1,0 +1,77 @@
+.headroom {
+    transition: transform 300ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 20px 0;
+    @include clearfix();
+
+    #brand {
+        float: left;
+        display: block;
+        height: 70px;
+        padding: 15px;
+        span {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            float: right;
+            padding: 0 10px;
+            font-weight: 300;
+            color: white;
+            font-size: 20px;
+        }
+        img {
+            height: 40px;
+            @include border-top-radius(20px);
+            @include border-bottom-radius(20px);
+        }
+        &:hover {
+            color: rgba(white, .5);
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+
+
+    nav {
+        float: right;
+        display: block;
+        height: 70px;
+        padding: 15px;
+        a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            float: right;
+            padding: 0 15px;
+            font-weight: 300;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            @include border-top-radius(3px);
+            @include border-bottom-radius(3px);
+            i {
+                margin-right: 4px;
+            }
+            &:hover {
+                background-color: darken($primary,5);
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+*,html,p {
+  font-family:$sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family:$sans-serif;
+  color: $base-font-color;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+p {
+  color: $base-paragraph-color;
+  font-size: 1.2em;
+  margin-bottom: 13px;
+  margin: 0 0 24px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  &.intro {
+    font-size: 1.4em;
+  }
+  &.helper {
+    font-size: 14px;
+    color: lighten($base-paragraph-color, 20);
+  }
+}
+
+a {
+  color: $secondary;
+}
+
+label {
+  font-size: 15px;
+}

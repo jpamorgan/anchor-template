@@ -1,0 +1,26 @@
+//z-index layers
+$layer-1: 1;
+$layer-2: 2;
+$layer-3: 3;
+
+//
+$app-max-width: 1000px;
+$app-min-width: 700px;
+$header-height: 60px;
+
+//FONTS
+$sans-serif: 'Rodio', 'Helvetica Neue', helvertica, arial, sans-serif;
+$base-paragraph-color: #2a3333;
+
+//colors
+$primary: #0072ff; //blue
+$secondary: #00c6ff; //lighter blue
+$special: #FD8B10;
+$green: #3dba0f; //green
+$support-color: $green;
+
+//forms & buttons
+$fb-height: 40px;
+$fb-line-height: 20px;
+$fb-padding: 10px 14px;
+$fb-font-size: 16px;
