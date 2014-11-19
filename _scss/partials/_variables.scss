@@ -20,8 +20,8 @@ $red: #E9704E; //pastel red
 $blue: #0072ff; //bright blue
 
 //template colors
-$primary: darken($pastel-green,10); //green
-$secondary: lighten($pastel-green,10); //lighter green
+$primary: darken($blue,10); //green
+$secondary: lighten($blue,10); //lighter green
 $special: $red;
 $support-color: $orange;
 
